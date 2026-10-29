@@ -1,0 +1,22 @@
+.r4-estimate{display:inline-block;font-size:11px;line-height:1.35;color:#92400e;background:#fef3c7;border-radius:3px;padding:1px 4px;vertical-align:middle}.r4-data-notice{line-height:1.5}#r4-provenance{line-height:1.5}
+
+/* Shared cabinet components; inherited palette, typography and spacing. */
+.r6-main-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;align-items:stretch}
+.r6-main-tabs>li{display:flex;min-width:0;margin:0!important;border:0!important}
+.r6-main-tabs>li>a{display:flex;flex:1;align-items:center;justify-content:center;min-width:0;min-height:60px}
+.r6-contract-actions{flex-wrap:wrap;row-gap:16px}
+.r6-lease-cta-wrap{flex-shrink:0}
+.r6-lease-cta{display:inline-flex;align-items:center;justify-content:center;min-height:50px;text-align:center}
+.r6-financial-card{overflow:hidden}
+.r6-card-heading{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:76px;padding:16px;background:#fff;border-bottom:1px solid #e5e7eb;text-align:left;font-weight:700;line-height:20px}
+.payment-block>.r6-card-heading>div{padding:0}
+.r6-table-head{padding:0;background:#fffbeb;color:inherit;font-size:14px;line-height:20px;letter-spacing:normal;text-transform:none;align-items:stretch;text-align:center}
+.r6-table-head>div{display:flex;align-items:center;justify-content:center;padding:16px 8px}
+.r6-table-row{background:#fffbeb;line-height:20px;font-size:14px;align-items:center;font-variant-numeric:tabular-nums}
+.r6-table-row>div,.r6-table-row>button{padding:8px;overflow-wrap:anywhere}
+.r6-table-row:hover{background:#fef3c7}
+.r6-table-total{background:#fffbeb;font-weight:700}
+.r6-card-totals{padding:8px 16px;background:#fffbeb;border-top:1px solid #e5e7eb}
+.r6-card-totals .r2-debt-row>div:first-child{padding-left:0}
+@media(max-width:639px){.r6-main-tabs{grid-template-columns:1fr}.r6-contract-actions{gap:16px}.r6-contract-actions>div:first-child{flex-wrap:wrap;gap:12px}}
+@media print{.r6-card-totals{padding:4px 0}}

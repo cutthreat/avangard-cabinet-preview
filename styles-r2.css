@@ -1,0 +1,29 @@
+/* Only additions. Unchanged elements retain original.css from the demo. */
+.r2-grid-nine{grid-template-columns:repeat(9,minmax(0,1fr))}
+.r2-subtabs{display:flex;flex-wrap:wrap;align-items:center;gap:28px}
+.r2-subtab{padding:0 0 3px;text-align:left;line-height:1.5;text-underline-offset:4px}
+.r2-subtab.active{color:#b45309;text-decoration:underline}
+.r2-subtab:focus-visible{outline:2px solid #b45309;outline-offset:4px}
+.r2-short-note{font-size:12px;font-weight:400;color:#6b7280;line-height:1.5}
+.r2-ledger-note{padding:8px 16px;text-align:left}
+.r2-debt-row{font-size:14px}
+.r2-debt-row>:last-child{grid-column:span 5 / span 5}
+.r2-native-button{background:#d97706;border:1px solid #d97706;color:white;font-weight:700;border-radius:4px;padding:8px 16px;grid-column:2 / span 2;justify-self:start}
+.r2-plain-totals{display:grid;gap:8px;text-align:left}
+.r2-tools{font-size:12px;color:#6b7280;padding:16px 32px;width:100%}
+.r2-tools summary{cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.r2-tools-body{padding:12px 0;line-height:1.6}
+.r2-tools select{font-size:12px;padding:6px 28px 6px 8px;margin:0 12px 8px 4px}
+.r2-tools a{text-decoration:underline}
+.r2-tools p{margin-top:8px}
+.r2-paper{overflow:auto}
+.r3-feedback{margin:12px 16px;color:#6b7280;font-size:14px;line-height:1.5}
+.r3-source-issue{padding:8px 16px;color:#92400e;text-align:left;font-size:12px;line-height:1.5}
+.r3-print-table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:12px;text-align:center}
+.r3-print-table th,.r3-print-table td{border-bottom:1px solid #e5e7eb;padding:8px 5px;vertical-align:top;overflow-wrap:anywhere}
+.r3-print-table th{font-weight:600}
+.fa-exclamation{display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;padding:0!important;font-style:normal;font-size:10px;line-height:1}
+.fa-exclamation::before{content:"!";font-family:Arial,sans-serif}
+[hidden]{display:none!important}
+@media(max-width:640px){.r2-subtabs{gap:12px;margin-left:16px;margin-right:16px}.r2-subtab{font-size:16px;min-height:40px}.r2-tools{padding:16px}.r2-tools select{display:block;max-width:100%;margin-left:0}}
+@media print{html,body{background:white!important;height:auto!important}nav,header,.footer,.r2-tools,#back-print{display:none!important}.r2-paper{margin:0!important;padding:0!important;border:0;overflow:visible;font-size:11px;line-height:1.35}.r2-paper h2{font-size:16px}.r2-paper .r2-short-note{color:#333;font-size:10px;padding:6px 0}.r2-paper .r2-debt-row{font-size:11px;padding:4px 0;break-inside:avoid}.r2-paper .r3-source-issue{font-size:10px;padding:6px 0}.r2-paper .r3-print-summary{break-inside:avoid}.r2-paper .r3-balanceBlock,.r2-paper .r3-totalsBlock{break-inside:avoid;padding:4px 0}.r2-paper .grid-cols-2{padding-top:4px;padding-bottom:4px}.r3-print-table{font-size:10px;line-height:1.3}.r3-print-table thead{display:table-header-group}.r3-print-table tr{break-inside:avoid}.r3-print-table th,.r3-print-table td{padding:4px}@page{size:A4 landscape;margin:12mm}}
